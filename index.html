@@ -3,113 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | Solutions & Innovation</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
-        .hero-gradient { background: radial-gradient(circle at top right, #f0f9ff 0%, #ffffff 50%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
-    </style>
+    <title>GenAI Interface | Intelligence in Motion</title>
 </head>
-<body class="bg-white text-slate-900 hero-gradient">
+<body>
+    <div class="cursor-wrapper">
+        <div class="cursor-dot"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-glow"></div>
+    </div>
 
-    <nav class="fixed w-full z-50 glass-nav">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight text-blue-600">INNOVATE.</a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-blue-600">Projects</a>
-                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-blue-600">About</a>
-                <a href="mailto:your-email@example.com" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition">Contact Me</a>
+    <aside class="sidebar glass" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-animation" id="kiro-logo">
+                <svg viewBox="0 0 100 40">
+                    <path class="draw-path" d="M20,30 Q50,10 80,30" fill="none" stroke="currentColor" stroke-width="3" />
+                </svg>
             </div>
+            <span>Studio CMS</span>
         </div>
-    </nav>
+        <nav class="sidebar-content">
+            <button class="nav-item">Theme: Obsidian</button>
+            <button class="nav-item">Asset Strategy: /gen</button>
+        </nav>
+    </aside>
 
-    <section class="pt-40 pb-24 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
-            <span class="px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">Available for Projects</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-                Turning ideas into <br><span class="text-blue-600">digital reality.</span>
-            </h1>
-            <p class="text-lg text-slate-500 max-w-2xl mb-10 leading-relaxed">
-                Information Science professional specializing in Cloud Architecture, AI-driven solutions, and Scalable Data Systems. 
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#projects" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all">View Case Studies</a>
-                <a href="https://linkedin.com" target="_blank" class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-semibold flex items-center gap-2 hover:bg-slate-50 transition">
-                    LinkedIn <span class="material-symbols-rounded text-sm">open_in_new</span>
-                </a>
-            </div>
+    <main class="viewport">
+        <div class="intelligence-core">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <div class="core-sphere"></div>
         </div>
-    </section>
+        
+        <button class="toggle-sidebar" onclick="toggleSidebar()">Edit Interface</button>
+    </main>
 
-    <section id="projects" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <h2 class="text-3xl font-bold mb-4">Selected Work</h2>
-                    <p class="text-slate-500">A showcase of technical expertise and creative problem solving.</p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
-                        <span class="material-symbols-rounded">cloud_done</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Serverless Data Pipeline</h3>
-                    <p class="text-slate-600 mb-6">Architected a real-time ingestion pipeline using AWS Lambda, S3, and Kinesis for high-volume data streams.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">AWS</span>
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">Python</span>
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">Terraform</span>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
-                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
-                        <span class="material-symbols-rounded">psychology</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">AI Resume Analyzer</h3>
-                    <p class="text-slate-600 mb-6">Developed a Generative AI tool that parses resumes against job descriptions using LLMs to provide score insights.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">OpenAI</span>
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">FastAPI</span>
-                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">React</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 px-6 border-t border-slate-100">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Professional Background</h2>
-            <p class="text-lg text-slate-600 leading-relaxed mb-12">
-                I hold a Master's degree in Information Science with a deep passion for how data intersects with human experiences. I specialize in bridging the gap between complex infrastructure and intuitive user interfaces.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="p-4"><p class="font-bold text-2xl">3+</p><p class="text-sm text-slate-500">Years Exp</p></div>
-                <div class="p-4"><p class="font-bold text-2xl">10+</p><p class="text-sm text-slate-500">Cloud Projects</p></div>
-                <div class="p-4"><p class="font-bold text-2xl">Master's</p><p class="text-sm text-slate-500">Degree</p></div>
-                <div class="p-4"><p class="font-bold text-2xl">AI/ML</p><p class="text-sm text-slate-500">Specialist</p></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-12 px-6 border-t border-slate-100 text-center">
-        <p class="text-slate-400 text-sm mb-6">© 2025 Professional Portfolio. Built with Tailwind CSS.</p>
-        <div class="flex justify-center gap-6 text-slate-400">
-            <a href="#" class="hover:text-blue-600 transition">Github</a>
-            <a href="#" class="hover:text-blue-600 transition">LinkedIn</a>
-            <a href="#" class="hover:text-blue-600 transition">Twitter</a>
-        </div>
-    </footer>
-
+    <div class="modal glass hidden" id="hosting-modal">
+        <h3>Deploying to Cloud</h3>
+        <p>Connecting to GitHub & Netlify...</p>
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
