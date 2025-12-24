@@ -1,0 +1,7 @@
+[
+  { "size": 40, "glow": true },
+  { "size": 60, "glow": false },
+  { "size": 30, "glow": true },
+  { "size": 50, "glow": true },
+  { "size": 20, "glow": false }
+]
