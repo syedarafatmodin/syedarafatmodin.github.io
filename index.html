@@ -3,95 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
+    <title>Professional Portfolio | Solutions & Innovation</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
-        .gradient-text { background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .hero-gradient { background: radial-gradient(circle at top right, #f0f9ff 0%, #ffffff 50%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 scroll-smooth">
+<body class="bg-white text-slate-900 hero-gradient">
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold gradient-text tracking-tighter">PORTFOLIO.</div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-blue-600 transition">Home</a>
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-                <a href="#contact" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contact</a>
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-blue-600">INNOVATE.</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-blue-600">Projects</a>
+                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-blue-600">About</a>
+                <a href="mailto:your-email@example.com" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition">Contact Me</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1 text-center md:text-left">
-                <h2 class="text-blue-600 font-semibold tracking-widest uppercase text-sm mb-4">Welcome to my space</h2>
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    Building <span class="gradient-text">Digital</span> <br>Experiences.
-                </h1>
-                <p class="text-lg text-slate-600 mb-8 max-w-xl">
-                    I'm a Developer and Designer focused on creating clean, user-centric, and high-performance web applications.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#projects" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition">View My Work</a>
-                    <a href="#contact" class="px-8 py-4 border border-slate-300 rounded-xl font-semibold hover:bg-slate-100 transition">Download CV</a>
-                </div>
-            </div>
-            <div class="flex-1 relative">
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-500 rounded-full blur-3xl opacity-20 absolute -top-10 -left-10"></div>
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-purple-500 rounded-full blur-3xl opacity-20 absolute -bottom-10 -right-10"></div>
-                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1000" alt="Work" class="rounded-2xl shadow-2xl relative z-10 w-full object-cover aspect-video">
+    <section class="pt-40 pb-24 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+            <span class="px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">Available for Projects</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
+                Turning ideas into <br><span class="text-blue-600">digital reality.</span>
+            </h1>
+            <p class="text-lg text-slate-500 max-w-2xl mb-10 leading-relaxed">
+                Information Science professional specializing in Cloud Architecture, AI-driven solutions, and Scalable Data Systems. 
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all">View Case Studies</a>
+                <a href="https://linkedin.com" target="_blank" class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-semibold flex items-center gap-2 hover:bg-slate-50 transition">
+                    LinkedIn <span class="material-symbols-rounded text-sm">open_in_new</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
+    <section id="projects" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
                 <div>
-                    <h2 class="text-3xl font-bold mb-2">Featured Projects</h2>
-                    <p class="text-slate-500">A selection of my recent works</p>
+                    <h2 class="text-3xl font-bold mb-4">Selected Work</h2>
+                    <p class="text-slate-500">A showcase of technical expertise and creative problem solving.</p>
                 </div>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden rounded-2xl mb-4">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <span class="material-symbols-rounded">cloud_done</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">E-Commerce Redesign</h3>
-                    <p class="text-slate-600">UI/UX and Frontend Development</p>
+                    <h3 class="text-xl font-bold mb-3">Serverless Data Pipeline</h3>
+                    <p class="text-slate-600 mb-6">Architected a real-time ingestion pipeline using AWS Lambda, S3, and Kinesis for high-volume data streams.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">AWS</span>
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">Python</span>
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">Terraform</span>
+                    </div>
                 </div>
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden rounded-2xl mb-4">
-                        <img src="https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=800" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                        <span class="material-symbols-rounded">psychology</span>
                     </div>
-                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">Data Analytics Dashboard</h3>
-                    <p class="text-slate-600">Fullstack Web Application</p>
+                    <h3 class="text-xl font-bold mb-3">AI Resume Analyzer</h3>
+                    <p class="text-slate-600 mb-6">Developed a Generative AI tool that parses resumes against job descriptions using LLMs to provide score insights.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">OpenAI</span>
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">FastAPI</span>
+                        <span class="px-3 py-1 bg-slate-50 rounded-lg text-xs font-medium text-slate-500">React</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">Let’s build something together.</h2>
-            <p class="text-slate-400 mb-10 max-w-2xl mx-auto">Currently available for freelance work and full-time opportunities. Reach out via email or LinkedIn.</p>
-            <a href="mailto:hello@yourname.com" class="text-3xl font-light hover:text-blue-400 transition underline underline-offset-8">hello@yourname.com</a>
-            
-            <div class="mt-20 pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-500 text-sm">© 2025 Your Name. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-slate-400 hover:text-white transition">Twitter</a>
-                    <a href="#" class="text-slate-400 hover:text-white transition">GitHub</a>
-                    <a href="#" class="text-slate-400 hover:text-white transition">LinkedIn</a>
-                </div>
+    <section id="about" class="py-24 px-6 border-t border-slate-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Professional Background</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-12">
+                I hold a Master's degree in Information Science with a deep passion for how data intersects with human experiences. I specialize in bridging the gap between complex infrastructure and intuitive user interfaces.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4"><p class="font-bold text-2xl">3+</p><p class="text-sm text-slate-500">Years Exp</p></div>
+                <div class="p-4"><p class="font-bold text-2xl">10+</p><p class="text-sm text-slate-500">Cloud Projects</p></div>
+                <div class="p-4"><p class="font-bold text-2xl">Master's</p><p class="text-sm text-slate-500">Degree</p></div>
+                <div class="p-4"><p class="font-bold text-2xl">AI/ML</p><p class="text-sm text-slate-500">Specialist</p></div>
             </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-slate-100 text-center">
+        <p class="text-slate-400 text-sm mb-6">© 2025 Professional Portfolio. Built with Tailwind CSS.</p>
+        <div class="flex justify-center gap-6 text-slate-400">
+            <a href="#" class="hover:text-blue-600 transition">Github</a>
+            <a href="#" class="hover:text-blue-600 transition">LinkedIn</a>
+            <a href="#" class="hover:text-blue-600 transition">Twitter</a>
         </div>
     </footer>
 
